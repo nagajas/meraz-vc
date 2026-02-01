@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Meraz 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">MERAZ 2026</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="index.html#passes">Passes</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="events-section">
+        <div class="container">
+            <h1>All Events</h1>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">All Events</button>
+                <button class="filter-btn" data-category="technical">Technical</button>
+                <button class="filter-btn" data-category="cultural">Cultural</button>
+                <button class="filter-btn" data-category="sports">Sports</button>
+                <button class="filter-btn" data-category="workshops">Workshops</button>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search events...">
+            </div>
+
+            <div class="events-list" id="eventsList">
+                <!-- Events will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Detail Modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalEventName"></h2>
+            <p id="modalEventDescription"></p>
+            <div class="event-details">
+                <p><strong>Date:</strong> <span id="modalEventDate"></span></p>
+                <p><strong>Venue:</strong> <span id="modalEventPlace"></span></p>
+                <p><strong>Contact:</strong> <span id="modalEventContact"></span></p>
+                <p><strong>Category:</strong> <span id="modalEventCategory"></span></p>
+            </div>
+            <button class="btn register-btn" id="registerBtn">Register for Event</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Meraz - IIT Bhilai. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
